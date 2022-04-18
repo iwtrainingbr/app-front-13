@@ -1,52 +1,27 @@
-//import Button from "./components/Button";
-
-import React from "react";
-
 import {
-  Button,
-  TextField,
-  Divider,
-  Switch
-} from "@mui/material";
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
-import Favorite from "@mui/icons-material/Favorite";
+
+import Report from "./pages/Report";
+import Home from "./pages/Home";
+import Exemplo from "./pages/Exemplo";
+import NotFound from "./pages/NotFound";
 
 function App() {
-  const [visibility, setVisibility] = React.useState(false);
-
-  const alterarVisibilidade = () => {
-      setVisibility(!visibility);
-  }
-
-  let word = 'Aeww';
   return (
-    <div>
-      E {word}
-      <br/><br/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/relatorio" element={<Report/>}/>
+        <Route path="/exemplo" element={<Exemplo/>}/>
 
-      {
-        visibility === true && <TextField label="Nome" type="password"/>
-      }
 
-      <br/>
-
-      <Divider/>
-
-      <br/>
-
-      <Button variant="contained">
-        <Favorite/>
-        Clique aqui
-      </Button>
-
-      <Button variant="outlined">Clique aqui</Button>
-      <Button variant="contained" color="error">Clique aqui</Button>
-      <Button>Clique aqui</Button>
-
-      <br/>
-      <Switch onChange={alterarVisibilidade} color="error"/>
-
-    </div>
+        <Route path="/*" element={<NotFound/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
