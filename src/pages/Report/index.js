@@ -1,7 +1,7 @@
 export default function Report(){
   return (
     <div>
-      Pagina de relatorios
+      Pagina de relatorios asdad
     </div>
   )
 }
