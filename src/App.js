@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Exemplo from "./pages/Exemplo";
 import NotFound from "./pages/NotFound";
 import Tutorial from "./pages/Tutorial"
+import Support from "./pages/Support";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/tutorial" element={<Tutorial/>}/>
         <Route path="/relatorio" element={<Report/>}/>
         <Route path="/exemplo" element={<Exemplo/>}/>
-
+        <Route path="/ajuda" element={<Support/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
