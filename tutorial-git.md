@@ -7,7 +7,7 @@
  - git pull origin main
 
 #### Serve pra criar um novo branch, e mudar pra ele
- - git checkout -b novo-branch
+ - git checkout -b 
 
 //faz as alterações nos codigos, de acordo com o solicitaddo na issue/task
 
