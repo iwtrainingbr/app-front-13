@@ -9,6 +9,7 @@ import Report from "./pages/Report";
 import Home from "./pages/Home";
 import Exemplo from "./pages/Exemplo";
 import NotFound from "./pages/NotFound";
+import Team from "./pages/Team";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/relatorio" element={<Report/>}/>
         <Route path="/exemplo" element={<Exemplo/>}/>
-
+        <Route path="/team" element={<Team/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
