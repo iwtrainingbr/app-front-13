@@ -1,4 +1,6 @@
 import * as React from 'react';
+import styles from './Home.css';
+import fotos from './CROSS.png';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
@@ -7,16 +9,14 @@ export default function Home() {
   return (
   
     
-    <div align="center">
+    <div className={styles.home}  align="center">
 
-      <h1>BEM VINDO CROSSFITEIRO!!!</h1>
-      
-      <span>
+      <h1>BEM-VINDO <span style={{color:"gray"}}>CROSSFITEIRO!!!</span></h1>
+      <p>
         <strong>
           "Um atleta não pode chegar à competição muito motivado se nunca foi posto à prova."
         </strong> 
-        
-      </span>
+      </p>
         <Box
       sx={{
         margin: '50px',
@@ -28,12 +28,14 @@ export default function Home() {
         },
       }}
     >
-      <ButtonGroup variant="text" aria-label="text button group">
-        <Button>Ontem</Button>
-        <Button>Hoje</Button>
-        <Button>Amanhã</Button>
+      <ButtonGroup variant="outlined" aria-label="outlined button group">
+          <Button>Ontem</Button>
+          <Button>Hoje</Button>
+          <Button>Amanhã</Button>
       </ButtonGroup>
     </Box>
+
+    <img src={fotos} alt="foto" />
 
     </div>
   )
