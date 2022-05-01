@@ -1,0 +1,29 @@
+{
+  "bandas": [
+    {
+      "id": 1,
+      "nome": "Unha Pintada",
+      "foto": "https://images.suamusica.com.br/p2KhMAYhe_dxMX3LlyulUTyNvHk=/500x500/32867896/3323417/cd_cover.png"
+    },
+    {
+      "id": 2,
+      "nome": "Conde do forró",
+      "foto": "https://originalouversao.com.br/assets/img/artistas/Conde_do_Forro_1486833688.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Playboy do boné",
+      "foto": "https://www.diariodaamazonia.com.br/gerenciador/data/uploads/2016/03/PLAYBOY-ENGENHEIRO.jpg"
+    },
+    {
+      "id": 4,
+      "nome": "Rainhas da Farra",
+      "foto": "https://i.scdn.co/image/ab67616d0000b27342838f75d4d17e22cae2fbcf"
+    },
+    {
+      "id": 5,
+      "nome": "Banda a Loba",
+      "foto": "https://yt3.ggpht.com/ytc/AKedOLTA3pFWut0A2HDtFFPHpkgZcSIR6DZbGF3GzN_U=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ]
+}

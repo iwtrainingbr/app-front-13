@@ -18,7 +18,7 @@ import Horarios from "./pages/Horarios";
 import Sobre from "./pages/Sobre";
 import Cadastro from "./pages/Cadastro";
 import Like from "./pages/Like";
-
+import Alessandro from "./pages/Alessandro";
 
 
 import Navbar from "./components/Navbar";
@@ -43,6 +43,7 @@ function App() {
         <Route path="/sobre" element={<Sobre/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
         <Route path="/like" element={<Like/>}/>
+        <Route path="/alessandro" element={<Alessandro/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
