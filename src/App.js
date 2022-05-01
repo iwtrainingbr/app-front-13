@@ -14,10 +14,16 @@ import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
 import Tutorial from "./pages/Tutorial"
 import Support from "./pages/Support";
+import Horarios from "./pages/Horarios";
+
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
+
+      <div style={{width: '96%', marginLeft: '2%'}}>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/tutorial" element={<Tutorial/>}/>
@@ -27,9 +33,11 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/ajuda" element={<Support/>}/>
+        <Route path="/horarios" element={<Horarios/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
+      </div>
     </BrowserRouter>
   );
 }
