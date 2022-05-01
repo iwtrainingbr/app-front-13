@@ -15,6 +15,7 @@ import Perfil from "./pages/Perfil";
 import Tutorial from "./pages/Tutorial"
 import Support from "./pages/Support";
 import Horarios from "./pages/Horarios";
+import RecuperarSenha from "./pages/RecuperarSenha";
 
 import Navbar from "./components/Navbar";
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/ajuda" element={<Support/>}/>
         <Route path="/horarios" element={<Horarios/>}/>
+        <Route path="/RecuperarSenha" element={<RecuperarSenha/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
