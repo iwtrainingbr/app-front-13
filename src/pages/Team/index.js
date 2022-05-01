@@ -20,9 +20,9 @@ import './style.css'
 
 export default function Team() {
   
-  const [liked, setLiked] = useState(false);
+  const [liked, setLiked] = React.useState(false);
   const handleLiked = () => {
-    set
+    setLiked(!liked);
   }
 
   return (
@@ -50,7 +50,7 @@ export default function Team() {
             Dias do Leo
           </Button>
         <IconButton onClick={handleLiked} aria-label="add to favorites">
-          <FavoriteIcon classeName={liked && 'red'}/>
+          <FavoriteIcon className={liked && 'red'}/>
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
@@ -83,8 +83,8 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias da Bia
           </Button>
-          <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'} />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
@@ -118,8 +118,8 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias do Carla
           </Button>
-          <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'}/>
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
@@ -152,8 +152,8 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias do Jef
           </Button>
-          <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'} />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
