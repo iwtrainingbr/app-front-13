@@ -8,11 +8,16 @@ import coach1 from './img/coach_leo.jpg';
 import coach2 from './img/coach_bia.jpg';
 import coach3 from './img/coach_carla.jpg';
 import coach4 from './img/coach_jef.jpg';
+import IconButton, { IconButtonProps } from '@mui/material/IconButton';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ShareIcon from '@mui/icons-material/Share';
+import Divider from '@mui/material/Divider';
+import './style.css'
 
 export default function Team() {
   return (
     <div>
-      <Card>
+      <Card className="marginCard">
         <CardActionArea>
           <CardMedia
             component="img"
@@ -31,13 +36,19 @@ export default function Team() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary">
+        <Button size="small" color="primary">
             Dias do Leo
           </Button>
+        <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
         </CardActions>
       </Card>
-
-      <Card>
+      <Divider></Divider>
+      <Card className="marginCard">
         <CardActionArea>
           <CardMedia
             component="img"
@@ -59,16 +70,23 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias da Bia
           </Button>
+          <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
         </CardActions>
       </Card>
-
-      <Card>
+      <Divider></Divider>
+      <Card className="marginCard">
         <CardActionArea>
           <CardMedia
             component="img"
             height="150"
             image= {coach3}
             alt="Coach Carla"
+
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
@@ -84,10 +102,16 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias do Carla
           </Button>
+          <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
         </CardActions>
       </Card>
-
-      <Card>
+      <Divider></Divider>
+      <Card className="marginCard">
         <CardActionArea>
           <CardMedia
             component="img"
@@ -109,9 +133,15 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias do Jef
           </Button>
+          <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
         </CardActions>
       </Card>
-
+      <Divider></Divider>
     
     </div>
   );
