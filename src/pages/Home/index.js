@@ -8,8 +8,6 @@ import './Home.css';
 
 export default function Home() {
   return (
-
-
     <div className="page-home"  align="center">
 
       <h1>BEM-VINDO <span style={{color:"gray"}}>CROSSFITEIRO!!!</span></h1>

@@ -8,15 +8,26 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
+
+import {
+  Home, Schedule, Group
+} from '@mui/icons-material';
+
+import {
+  Drawer, Menu, MenuItem, FormGroup, FormControlLabel,
+  List, ListItem, ListItemIcon, ListItemText
+} from '@mui/material';
+
 import './css/link.css'
 
 
 export default function Navbar() {
   const [menuUser, setMenuUser] = React.useState(false);
+  const [menuSidebar, setMenuSidebar] = React.useState(false);
+
+  const handleOpenCloseSidebar = () => {
+    setMenuSidebar(!menuSidebar);
+  }
 
   const handleOpenClose = () => {
     setMenuUser(!menuUser);
@@ -24,6 +35,27 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <Drawer
+        anchor={"left"}
+        open={menuSidebar}
+        onClose={handleOpenCloseSidebar}
+      >
+        <List>
+          <ListItem button>
+            <ListItemIcon><Home/></ListItemIcon>
+            <ListItemText>Inicio</ListItemText>
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon><Group/></ListItemIcon>
+            <ListItemText>Coaches</ListItemText>
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon><Schedule/></ListItemIcon>
+            <ListItemText>Horários</ListItemText>
+          </ListItem>
+        </List>
+      </Drawer>
+
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -32,6 +64,7 @@ export default function Navbar() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={handleOpenCloseSidebar}
           >
             <MenuIcon />
           </IconButton>
