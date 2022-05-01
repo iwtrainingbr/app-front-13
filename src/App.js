@@ -16,6 +16,7 @@ import Tutorial from "./pages/Tutorial"
 import Support from "./pages/Support";
 import Horarios from "./pages/Horarios";
 
+
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/ajuda" element={<Support/>}/>
         <Route path="/horarios" element={<Horarios/>}/>
+      
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
