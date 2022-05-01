@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
 
-      <div style={{width: '96%', marginLeft: '2%'}}>
+      <div style={{width: '96%', marginLeft: '2%', height: '100%'}}>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/tutorial" element={<Tutorial/>}/>
