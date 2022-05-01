@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,6 +12,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import './css/link.css'
+
 
 export default function Navbar() {
   const [menuUser, setMenuUser] = React.useState(false);
@@ -62,8 +65,8 @@ export default function Navbar() {
                 open={Boolean(menuUser)}
                 onClose={handleOpenClose}
               >
-                <MenuItem onClick={handleOpenClose}>Meu Perfil</MenuItem>
-                <MenuItem onClick={handleOpenClose}>Sair</MenuItem>
+                <MenuItem onClick={handleOpenClose}><Link to="/perfil">Meu Perfil</Link> </MenuItem>
+                <MenuItem onClick={handleOpenClose}><Link to="/login">Sair</Link></MenuItem>
               </Menu>
             </div>
         </Toolbar>

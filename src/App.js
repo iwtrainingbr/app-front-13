@@ -18,6 +18,7 @@ import Horarios from "./pages/Horarios";
 import Sobre from "./pages/Sobre";
 import Cadastro from "./pages/Cadastro"
 
+
 import Navbar from "./components/Navbar";
 
 
