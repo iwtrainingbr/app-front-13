@@ -11,7 +11,7 @@ export default function Login() {
       <TextField className="login" fullWidth label="Senha" type="password"/>
       <Button fullWidth variant="contained">Entrar</Button>
       <h3>Esqueceu a senha?</h3>
-      <Button fullWidth variant="text">Recuparar senha</Button>
+      <Button fullWidth variant="text">Recuperar senha</Button>
       <h3>Não tem conta? Criar conta</h3>
       <Button fullWidth variant="text">Criar conta</Button>
       
