@@ -15,8 +15,10 @@ import Perfil from "./pages/Perfil";
 import Tutorial from "./pages/Tutorial"
 import Support from "./pages/Support";
 import Horarios from "./pages/Horarios";
+import Cadastro from "./pages/Cadastro"
 
 import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/ajuda" element={<Support/>}/>
         <Route path="/horarios" element={<Horarios/>}/>
+        <Route path="/cadastro" element={<Cadastro/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
