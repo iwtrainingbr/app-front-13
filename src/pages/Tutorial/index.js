@@ -9,6 +9,7 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import './Tutorial.css';
 
 
 
@@ -51,8 +52,9 @@ export default function Tutorial() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-      <Paper
+    
+    <Box className="body-tutorial" align="center" sx={{ maxWidth: 400, flexGrow: 1 }}>
+      <Paper 
         square
         elevation={0}
         sx={{
@@ -63,9 +65,10 @@ export default function Tutorial() {
           bgcolor: 'background.default',
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+        <Typography className="label-tutorial" align='center'>{images[activeStep].label}</Typography>
       </Paper>
       <AutoPlaySwipeableViews
+      className="images-tutorial"
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
@@ -90,7 +93,7 @@ export default function Tutorial() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
+      <MobileStepper className='buttons-tutorial'
         steps={maxSteps}
         position="static"
         activeStep={activeStep}
@@ -120,6 +123,7 @@ export default function Tutorial() {
         }
       />
     </Box>
+   
   );
 }
 
