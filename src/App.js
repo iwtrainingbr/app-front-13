@@ -18,6 +18,7 @@ import Horarios from "./pages/Horarios";
 import Sobre from "./pages/Sobre";
 import Cadastro from "./pages/Cadastro";
 import Like from "./pages/Like";
+import Dayane from "./pages/Dayane";
 import Alessandro from "./pages/Alessandro";
 
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/sobre" element={<Sobre/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
         <Route path="/like" element={<Like/>}/>
+        <Route path="/dayane" element={<Dayane/>}/>
         <Route path="/alessandro" element={<Alessandro/>}/>
 
         <Route path="/*" element={<NotFound/>}/>
