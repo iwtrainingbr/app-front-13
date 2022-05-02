@@ -18,6 +18,7 @@ import Horarios from "./pages/Horarios";
 import Sobre from "./pages/Sobre";
 import Cadastro from "./pages/Cadastro";
 import Like from "./pages/Like";
+import Wesley from "./pages/Wesley";
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/cadastro" element={<Cadastro/>}/>
         <Route path="/like" element={<Like/>}/>
 
+        <Route path="/wesley" element={<Wesley/>}/>
         <Route path="/*" element={<NotFound/>}/>
       </Routes>
       </div>

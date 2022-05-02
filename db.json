@@ -1,0 +1,19 @@
+{
+  "bandas": [
+    {
+      "id": 1,
+      "nome": "Unha Pintada",
+      "foto": "https://www.downtownpub.com.br/wp-content/uploads/2016/07/foto-banda-nenhum-de-nos-II-1024x648.jpg"
+    },
+    {
+      "id": 2,
+      "nome": "Chama",
+      "foto": "https://www.downtownpub.com.br/wp-content/uploads/2016/07/foto-banda-nenhum-de-nos-II-1024x648.jpg"
+    },
+    {
+      "id": 3,
+      "nome": "Banda vuou",
+      "foto": "https://www.downtownpub.com.br/wp-content/uploads/2016/07/foto-banda-nenhum-de-nos-II-1024x648.jpg"
+    }
+  ]
+}
