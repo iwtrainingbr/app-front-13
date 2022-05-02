@@ -12,9 +12,19 @@ import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import Divider from '@mui/material/Divider';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import './style.css'
 
+
+
+
 export default function Team() {
+  
+  const [liked, setLiked] = React.useState(false);
+  const handleLiked = () => {
+    setLiked(!liked);
+  }
+
   return (
     <div>
       <Card className="marginCard">
@@ -39,11 +49,14 @@ export default function Team() {
         <Button size="small" color="primary">
             Dias do Leo
           </Button>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+        <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'}/>
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
+        </IconButton>
+        <IconButton aria-label="instagram">
+          <InstagramIcon/>
         </IconButton>
         </CardActions>
       </Card>
@@ -70,11 +83,14 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias da Bia
           </Button>
-          <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'} />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
+        </IconButton>
+        <IconButton aria-label="instagram">
+          <InstagramIcon/>
         </IconButton>
         </CardActions>
       </Card>
@@ -102,11 +118,14 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias do Carla
           </Button>
-          <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'}/>
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
+        </IconButton>
+        <IconButton aria-label="instagram">
+          <InstagramIcon/>
         </IconButton>
         </CardActions>
       </Card>
@@ -133,11 +152,14 @@ export default function Team() {
           <Button size="small" color="primary">
             Dias do Jef
           </Button>
-          <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <IconButton onClick={handleLiked} aria-label="add to favorites">
+          <FavoriteIcon className={liked && 'red'} />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
+        </IconButton>
+        <IconButton aria-label="instagram">
+          <InstagramIcon/>
         </IconButton>
         </CardActions>
       </Card>

@@ -1,0 +1,185 @@
+{
+  "veiculos": [
+    {
+      "id": 1,
+      "placa": "HOU-3725",
+      "ano_modelo": 1995,
+      "ano_fabricacao": 1995,
+      "marca": "Chevrolet",
+      "modelo": "Corsa Wind",
+      "cor": "Azul"
+    },
+    {
+      "id": 2,
+      "placa": "ORT-5515",
+      "ano_modelo": 2013,
+      "ano_fabricacao": 2014,
+      "marca": "Chevrolet",
+      "modelo": "Classic LS",
+      "cor": "Verde Lotus"
+    },
+    {
+      "id": 3,
+      "placa": "PNO-7745",
+      "ano_modelo": 2019,
+      "ano_fabricacao": 2019,
+      "marca": "Chevrolet",
+      "modelo": "Prisma",
+      "cor": "Branco"
+    },
+    {
+      "id": 4,
+      "placa": "RIF-7F01",
+      "ano_modelo": 2021,
+      "ano_fabricacao": 2021,
+      "marca": "Chevrolet",
+      "modelo": "Onix Plus",
+      "cor": "Preto"
+    },
+    {
+      "id": 5,
+      "placa": "HVS-2B07",
+      "ano_modelo": 1998,
+      "ano_fabricacao": 1998,
+      "marca": "Chevrolet",
+      "modelo": "Kadett",
+      "cor": "Branco"
+    },
+    {
+      "placa": "XXX-0800",
+      "marca": "Toyota",
+      "modelo": "Etios",
+      "ano_modelo": "2019",
+      "ano_fabricacao": "2019",
+      "cor": "Cinza",
+      "id": 6
+    },
+    {
+      "placa": "PMM-1234",
+      "marca": "",
+      "modelo": "",
+      "ano_modelo": "",
+      "ano_fabricacao": "",
+      "cor": "",
+      "id": 7
+    }
+  ],
+  "schedules": [
+    {
+      "id": 1,
+      "day": "Domingo",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "20"
+    },
+    {
+      "id":2,
+      "day": "Domingo",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "20"
+    },
+    {
+      "id":3,
+    "day": "segunda",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "10"
+    },
+    {
+      "id":4,
+       "day": "segunda",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "10"
+    },
+    {
+      "id":5,
+       "day": "terça",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "10"
+    },
+    {
+      "id":6,
+       "day": "terça",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "10"
+    },
+    {
+      "id":7,
+       "day": "quarta",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "15"
+    },
+    {
+      "id":8,
+      "day": "quarta",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "15"
+    },
+    {
+      "id":9,
+      "day": "quinta",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "10"
+    },
+    {
+      "id":10,
+      "day": "quinta",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "10"
+    },
+    {
+      "id":11,
+       "day": "sexta",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "20"
+    },
+    {
+      "id":12,
+       "day": "sexta",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "20"
+    },
+    {
+      "id":13,
+       "day": "sabado",
+      "begin_hour": "08:00",
+      "end_hour": "09:00",
+      "limit": "30"
+    },
+    {
+      "id":14,
+       "day": "sabado",
+      "begin_hour": "09:00",
+      "end_hour": "10:00",
+      "limit": "30"
+    }
+
+
+  ],
+  "collaborators": [
+    {
+      "id": 1,
+      "name": "Victor Belfort do Maracanau",
+      "description": "Evidentemente, a valorização de fatores subjetivos obstaculiza a apreciação da importância do investimento em reciclagem técnica.",
+      "photo": "/img/victor.png",
+      "instagram": "/vicesam_"
+    },
+    {
+      "id": 2,
+      "name": "Wesley Snipes da Parquelandia",
+      "description": "Por conseguinte, a complexidade dos estudos efetuados representa uma abertura para a melhoria das condições financeiras e administrativas exigidas.",
+      "photo": "",
+      "instagram": ""
+    }
+  ]
+}

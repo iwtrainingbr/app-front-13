@@ -1,19 +1,44 @@
 {
-  "bandas": [
+  "bandas":[
     {
-      "id": 1,
+        "id": 1,
+        "nome": "beyonce",
+        "foto": "https://imagens.brasil.elpais.com/resizer/_aZ8BewHQKWw2UuVeYaCXJrf0PQ=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/PUTOFH7OPBJQY6BLP4HXX62BVE.jpg"
+    },
+    {
+        "id": 2,
+        "nome": "rihanna",
+        "foto": "https://jpimg.com.br/uploads/2017/11/archives/2018/02/22/3036883194-com-show-de-idolo-rihanna-revela-fotos-de-sua-festa-de-30-anos.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "Mile Cyrus",
+        "foto": "https://rollingstone.uol.com.br/media/_versions/miley_cyrus_-_kevin_winter_getty_images_para_iheartmedia_widelg.jpg"
+    },
+    {
+      "id": 4,
       "nome": "Unha Pintada",
-      "foto": "https://www.downtownpub.com.br/wp-content/uploads/2016/07/foto-banda-nenhum-de-nos-II-1024x648.jpg"
+      "foto": "https://images.suamusica.com.br/p2KhMAYhe_dxMX3LlyulUTyNvHk=/500x500/32867896/3323417/cd_cover.png"
     },
     {
-      "id": 2,
-      "nome": "Chama",
-      "foto": "https://www.downtownpub.com.br/wp-content/uploads/2016/07/foto-banda-nenhum-de-nos-II-1024x648.jpg"
+      "id": 5,
+      "nome": "Conde do forró",
+      "foto": "https://originalouversao.com.br/assets/img/artistas/Conde_do_Forro_1486833688.jpg"
     },
     {
-      "id": 3,
-      "nome": "Banda vuou",
-      "foto": "https://www.downtownpub.com.br/wp-content/uploads/2016/07/foto-banda-nenhum-de-nos-II-1024x648.jpg"
+      "id": 6,
+      "nome": "Playboy do boné",
+      "foto": "https://www.diariodaamazonia.com.br/gerenciador/data/uploads/2016/03/PLAYBOY-ENGENHEIRO.jpg"
+    },
+    {
+      "id": 7,
+      "nome": "Rainhas da Farra",
+      "foto": "https://i.scdn.co/image/ab67616d0000b27342838f75d4d17e22cae2fbcf"
+    },
+    {
+      "id": 8,
+      "nome": "Banda a Loba",
+      "foto": "https://yt3.ggpht.com/ytc/AKedOLTA3pFWut0A2HDtFFPHpkgZcSIR6DZbGF3GzN_U=s900-c-k-c0x00ffffff-no-rj"
     }
   ]
 }
