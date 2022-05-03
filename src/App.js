@@ -20,7 +20,9 @@ import Cadastro from "./pages/Cadastro";
 import Like from "./pages/Like";
 import Wesley from "./pages/Wesley";
 import Dayane from "./pages/Dayane";
-import Alessandro from "./pages/Alessandro";
+import Bandas from "./pages/Bandas";
+
+import NovaBanda from "./pages/NovaBanda";
 
 
 import Navbar from "./components/Navbar";
@@ -46,7 +48,8 @@ function App() {
         <Route path="/cadastro" element={<Cadastro/>}/>
         <Route path="/like" element={<Like/>}/>
         <Route path="/dayane" element={<Dayane/>}/>
-        <Route path="/alessandro" element={<Alessandro/>}/>
+        <Route path="/bandas" element={<Bandas/>}/>
+        <Route path="/nova-banda" element={<NovaBanda/>}/>
 
         <Route path="/wesley" element={<Wesley/>}/>
         <Route path="/*" element={<NotFound/>}/>

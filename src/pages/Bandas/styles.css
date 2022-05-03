@@ -1,0 +1,8 @@
+.fab {
+  margin: 0px !important;
+  top: auto !important;
+  left: auto !important;
+  right: 20px !important;
+  bottom: 20px !important;
+  position: fixed !important;
+}
