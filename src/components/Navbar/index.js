@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import Person from '@mui/icons-material/Person';
 import Switch from '@mui/material/Switch';
 
 import {
@@ -49,6 +50,12 @@ export default function Navbar() {
             <ListItemIcon><Group/></ListItemIcon>
             <ListItemText>Coaches</ListItemText>
           </ListItem>
+          <Link to="/novo-coach">
+          <ListItem button>
+            <ListItemIcon><Person/></ListItemIcon>
+            <ListItemText>Novo Coach</ListItemText>
+          </ListItem>
+          </Link>
           <ListItem button>
             <ListItemIcon><Schedule/></ListItemIcon>
             <ListItemText>Horários</ListItemText>

@@ -24,6 +24,9 @@ import Bandas from "./pages/Bandas";
 
 import NovaBanda from "./pages/NovaBanda";
 
+import AddCoach from "./pages/Team/Add";
+import EditCoach from "./pages/Team/Edit";
+
 
 import Navbar from "./components/Navbar";
 
@@ -40,6 +43,8 @@ function App() {
         <Route path="/relatorio" element={<Report/>}/>
         <Route path="/exemplo" element={<Exemplo/>}/>
         <Route path="/team" element={<Team/>}/>
+        <Route path="/novo-coach" element={<AddCoach/>}/>
+        <Route path="/editar-coach/:id" element={<EditCoach/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/perfil" element={<Perfil/>}/>
         <Route path="/ajuda" element={<Support/>}/>

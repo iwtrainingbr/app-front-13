@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Link} from "react-router-dom";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -11,6 +12,8 @@ import coach4 from './img/coach_jef.jpg';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
+import RemoveIcon from '@mui/icons-material/Remove';
+import EditIcon from '@mui/icons-material/Edit';
 import Divider from '@mui/material/Divider';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import './style.css'
@@ -19,152 +22,82 @@ import './style.css'
 
 
 export default function Team() {
-  
+  const [collaborators, setCollaborators] = React.useState([]);
   const [liked, setLiked] = React.useState(false);
   const handleLiked = () => {
     setLiked(!liked);
   }
 
+  React.useEffect(() => {
+    fetch('http://localhost:3009/collaborators')
+      .then(response => response.json())
+      .then(response => setCollaborators(response))
+  }, []);
+
+  const removeCoach = (id) => {
+    if (false === window.confirm('Tem certeza?')) {
+      return;
+    }
+
+    fetch('http://localhost:3009/collaborators/'+id, {
+      method: 'DELETE'
+    });
+
+    setCollaborators(
+      // collaborators.filter((cadaCoach) => {
+      //   return cadaCoach.id !== id;
+      // })
+      collaborators.filter((cadaCoach) => cadaCoach.id !== id)
+    )
+  }
+
   return (
     <div>
-      <Card className="marginCard">
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="150"
-            image= {coach1}
-            alt="Coach Leo"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Leonardo Lima
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-        <Button size="small" color="primary">
-            Dias do Leo
-          </Button>
-        <IconButton onClick={handleLiked} aria-label="add to favorites">
-          <FavoriteIcon className={liked && 'red'}/>
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <IconButton aria-label="instagram">
-          <InstagramIcon/>
-        </IconButton>
-        </CardActions>
-      </Card>
-      <Divider></Divider>
-      <Card className="marginCard">
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="150"
-            image= {coach2}
-            alt="Coach bia"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Beatriz Souza
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Dias da Bia
-          </Button>
-          <IconButton onClick={handleLiked} aria-label="add to favorites">
-          <FavoriteIcon className={liked && 'red'} />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <IconButton aria-label="instagram">
-          <InstagramIcon/>
-        </IconButton>
-        </CardActions>
-      </Card>
-      <Divider></Divider>
-      <Card className="marginCard">
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="150"
-            image= {coach3}
-            alt="Coach Carla"
+      {collaborators.map(coach => {
+        return (
+          <Card className="marginCard">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="150"
+                image= {coach.photo}
+                alt="Coach Leo"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {coach.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {coach.description}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+            <Button size="small" color="primary">
+                Dias do Leo
+              </Button>
+            <IconButton onClick={handleLiked} aria-label="add to favorites">
+              <FavoriteIcon className={liked && 'red'}/>
+            </IconButton>
+            <IconButton aria-label="share">
+              <ShareIcon />
+            </IconButton>
+            <IconButton aria-label="instagram">
+              <InstagramIcon/>
+            </IconButton>
+            <IconButton aria-label="Remover"  onClick={() => removeCoach(coach.id)}>
+              <RemoveIcon/>
+            </IconButton>
+            <Link to={"/editar-coach/"+coach.id}>
+              <EditIcon/>
+            </Link>
+            </CardActions>
+          </Card>
+        )
+      })}
 
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Carla Lacerda
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Dias do Carla
-          </Button>
-          <IconButton onClick={handleLiked} aria-label="add to favorites">
-          <FavoriteIcon className={liked && 'red'}/>
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <IconButton aria-label="instagram">
-          <InstagramIcon/>
-        </IconButton>
-        </CardActions>
-      </Card>
-      <Divider></Divider>
-      <Card className="marginCard">
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="150"
-            image= {coach4}
-            alt="Coach jef"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Feferson Mendes
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            Dias do Jef
-          </Button>
-          <IconButton onClick={handleLiked} aria-label="add to favorites">
-          <FavoriteIcon className={liked && 'red'} />
-        </IconButton>
-        <IconButton aria-label="share">
-          <ShareIcon />
-        </IconButton>
-        <IconButton aria-label="instagram">
-          <InstagramIcon/>
-        </IconButton>
-        </CardActions>
-      </Card>
-      <Divider></Divider>
-    
+
+
     </div>
   );
 }
