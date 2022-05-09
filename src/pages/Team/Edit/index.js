@@ -38,13 +38,17 @@ export default function Add() {
       alert('deu certo');
   };
 
+  const handleName = (event) => {
+    setName(event.target.value);
+  }
+
   return (
     <div>
       <h1>Editar Coach</h1>
 
       <Divider/>
 
-      <TextField value={name} onChange={(event) => setName(event.target.value)} fullWidth label="Nome" type="text"/><br/><br/>
+      <TextField value={name} onChange={handleName} fullWidth label="Nome" type="text"/><br/><br/>
       <TextField value={description} onChange={(event) => setDescription(event.target.value)} fullWidth label="Descrição" type="text"/><br/><br/>
       <TextField value={photo} onChange={(event) => setPhoto(event.target.value)} fullWidth label="Foto" type="url"/><br/><br/>
       <Button  onClick={saveCoach} fullWidth variant="contained">Cadastrar</Button>
