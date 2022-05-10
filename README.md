@@ -22,3 +22,9 @@ Execute no terminal
 ```shell
 npm start
 ```
+
+### Instalando o Cypress (testes)
+- `npm install cypress`
+
+### Executando o Cypress (testes)
+- `npx cypress open`

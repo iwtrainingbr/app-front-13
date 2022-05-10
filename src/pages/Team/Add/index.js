@@ -30,7 +30,7 @@ export default function Add() {
 
       <Divider/>
 
-      <TextField value={name} onChange={(event) => setName(event.target.value)} fullWidth label="Nome" type="text"/><br/><br/>
+      <TextField data-cy="coach-name" value={name} onChange={(event) => setName(event.target.value)} fullWidth label="Nome" type="text"/><br/><br/>
       <TextField value={description} onChange={(event) => setDescription(event.target.value)} fullWidth label="Descrição" type="text"/><br/><br/>
       <TextField value={photo} onChange={(event) => setPhoto(event.target.value)} fullWidth label="Foto" type="url"/><br/><br/>
       <Button  onClick={saveCoach} fullWidth variant="contained">Cadastrar</Button>

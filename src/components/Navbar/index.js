@@ -51,7 +51,7 @@ export default function Navbar() {
             <ListItemText>Coaches</ListItemText>
           </ListItem>
           <Link to="/novo-coach">
-          <ListItem button>
+          <ListItem button onClick={handleOpenCloseSidebar}>
             <ListItemIcon><Person/></ListItemIcon>
             <ListItemText>Novo Coach</ListItemText>
           </ListItem>
@@ -66,6 +66,7 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton
+            data-cy="menu"
             size="large"
             edge="start"
             color="inherit"
