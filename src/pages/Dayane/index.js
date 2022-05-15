@@ -1,9 +1,9 @@
-import {useState, useEfect} from "react";
+import {useState, useEffect} from "react";
 import Divider from '@mui/material/Divider';
 
 export default function Dayane (){
     const [bandas, setBandas] = useState([]);
-    useEfect (() => {
+    useEffect (() => {
         fetch ('http://localhost:3009/bandas')
         .then(response => response.json())
         .then(response => setBandas(response));
