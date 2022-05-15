@@ -28,3 +28,6 @@ npm start
 
 ### Executando o Cypress (testes)
 - `npx cypress open`
+
+### Gerando imagens do PWA
+- `npx pwa-asset-generator public/img/logo-white.png ./public/assets --darkmode --padding "calc(35vh - 5%) calc(35vw - 10%)" --background "rgb(0, 0, 0)" -i ./public/index.html -m ./public/manifest.json`
