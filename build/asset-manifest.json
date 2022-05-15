@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f2da448.css",
+    "main.js": "/static/js/main.e113dbf2.js",
+    "static/media/coach_bia.jpg": "/static/media/coach_bia.d2b2c57ae5ca01c446c4.jpg",
+    "static/media/coach_leo.jpg": "/static/media/coach_leo.a908f67173e8286876c1.jpg",
+    "static/media/coach_carla.jpg": "/static/media/coach_carla.7d108e214ca379b674b9.jpg",
+    "static/media/imagem1.jpg": "/static/media/imagem1.0288dd38732c079dc8ac.jpg",
+    "static/media/coach_jef.jpg": "/static/media/coach_jef.6f4c06142c842927ac5d.jpg",
+    "static/media/404.png": "/static/media/404.284ee4082ab6bfd372bd.png",
+    "static/media/profile.jpg": "/static/media/profile.fd2fea47f8bf5d603b47.jpg",
+    "static/media/CROSS.png": "/static/media/CROSS.4ceb909af56b9de80fdd.png",
+    "index.html": "/index.html",
+    "main.2f2da448.css.map": "/static/css/main.2f2da448.css.map",
+    "main.e113dbf2.js.map": "/static/js/main.e113dbf2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f2da448.css",
+    "static/js/main.e113dbf2.js"
+  ]
+}
